@@ -203,7 +203,7 @@ exports.handler = (event, context, callback) => {
         /**
          * Prevents someone else from configuring a skill that sends requests to this function.
          */
-        if (event.session.application.applicationId !== 'amzn1.ask.skill.cfb7ebc9-4dd9-4366-b807-061bafd7f31f') {
+        if (event.session.application.applicationId !== '******') {
              callback('Invalid Application ID');
         }
 
